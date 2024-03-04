@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="./assets/images/icon.jpg" type="image/png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="calculator">
+            <!-- display/output  -->
+            <div class="output-container">
+                <p class="output-container__output" id="output"></p>
+            </div>
+
+            <!-- numpad  -->
+            <div class="calculator__keys">
+                <div class="numpad">
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-seven" onclick="appendToDisplay('7')">
+                            7
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-eight" onclick="appendToDisplay('8')">
+                            8
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-nine" onclick="appendToDisplay('9')">
+                            9
+                        </button>
+                    </div>
+                    <div class="button-container button-container--operator">
+                        <button class="button-container__button" id="button-add" onclick="handleOperator('+')">
+                            +
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-four" onclick="appendToDisplay('4')">
+                            4
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-five" onclick="appendToDisplay('5')">
+                            5
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-six" onclick="appendToDisplay('6')">
+                            6
+                        </button>
+                    </div>
+                    <div class="button-container button-container--operator">
+                        <button class="button-container__button" id="button-minus" onclick="handleOperator('-')">
+                            -
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-one" onclick="appendToDisplay('1')">
+                            1
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-two" onclick="appendToDisplay('2')">
+                            2
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-three" onclick="appendToDisplay('3')">
+                            3
+                        </button>
+                    </div>
+                    <div class="button-container button-container--operator">
+                        <button class="button-container__button" id="button-multiply" onclick="handleOperator('x')">
+                            x
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-three" onclick="appendToDisplay('.')">
+                            .
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-container__button" id="button-zero" onclick="appendToDisplay('0')">
+                            0
+                        </button>
+                    </div>
+                    <div class="button-container button-container--operator">
+                        <button class="button-container__button" id="button-equal" onclick="calculate()">
+                            =
+                        </button>
+                    </div>
+                    <div class="button-container button-container--operator">
+                        <button class="button-container__button" id="button-divide" onclick="handleOperator('/')">
+                            ÷
+                        </button>
+                    </div>
+                    <div class="button-container button-container--clear">
+                        <button class="button-container__button" id="button-clear" onclick="clearDisplay()">
+                            C L E A R
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+    </div>
+
+    <script src="./assets/javascript/script.js"></script>
+</body>
+</html>

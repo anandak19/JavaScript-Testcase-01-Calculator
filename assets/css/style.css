@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  background: linear-gradient(to right, #ffe998, #44ffcd); }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+
+.button-container__button {
+  background-color: white;
+  color: black;
+  height: 88px;
+  width: 86px;
+  box-sizing: border-box;
+  font-size: 45px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease; }
+  .button-container__button:hover {
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+  .button-container__button:active {
+    background-color: #ccc;
+    color: #222;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); }
+.button-container--operator .button-container__button {
+  background-color: black;
+  color: white; }
+  .button-container--operator .button-container__button:hover {
+    background-color: #333;
+    color: #f0f0f0; }
+  .button-container--operator .button-container__button:active {
+    background-color: #222; }
+.button-container--clear .button-container__button {
+  background-color: rgba(218, 0, 0, 0.693);
+  color: white;
+  width: 100%;
+  height: 64px;
+  font-size: 28px; }
+  .button-container--clear .button-container__button:hover {
+    background-color: #ae0000;
+    color: #f0f0f0; }
+  .button-container--clear .button-container__button:active {
+    background-color: #8b0101;
+    color: #ccc; }
+
+.output-container {
+  height: 88px;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: aliceblue;
+  overflow: hidden; }
+  .output-container__output {
+    font-size: 58px;
+    font-weight: 600; }
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(4, 86px);
+  grid-template-rows: repeat(4, 88px);
+  gap: 10px; }
+  .numpad .button-container--clear {
+    grid-column: 1 / -1; }
+
+.calculator {
+  padding: 18px;
+  margin-top: 38px;
+  background-color: rgba(114, 134, 112, 0.595);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8PX; }
+  .calculator__keys {
+    width: 374px;
+    margin-top: 18px; }
+  .calculator .output-container {
+    width: 374px; }
+
+/*# sourceMappingURL=style.css.map */

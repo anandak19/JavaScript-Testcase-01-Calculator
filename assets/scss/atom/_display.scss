@@ -1,0 +1,16 @@
+.output-container{
+    // margin: 100px;
+    height: 88px;
+    box-sizing: border-box;
+    padding: 5px 20px ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: aliceblue;
+    overflow: hidden;
+
+    &__output{
+        font-size: 58px;
+        font-weight: 600;
+    }
+}
